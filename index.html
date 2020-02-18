@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    
+        
+        
+        
+        <!doctype html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+
+<!-- Add font awesome icons -->
+
+      
+
+
+
+     
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transparent login form</title>
+    <style>
+    /*    ul{
+            margin: 0px;
+            padding:0px;
+            list-style: none;
+            overflow: hidden;
+        }
+   //    ul li{
+            float: left;
+             width: 200px;
+            height: 40px;
+            background-color: black;
+            line-height: 40px;
+            opacity: .8;
+            text-align: center;
+            font-size: 20px;
+            margin-right: 2px;
+           
+            
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            
+            color: steelblue;
+        }
+        ul li a:hover {
+            background-color: green;
+       
+            
+        }
+        ul li ul li{
+            display:none;
+        }
+        ul li :hover ul li{
+            display: block;
+        }
+           
+        */
+        
+
+
+             
+        
+        .fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+  text-align: center;
+  color: transparent;
+  
+  
+  
+ 
+}
+.fa-right{
+    float: right;
+    width: 100%;
+    margin-left: 70%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    
+    
+}
+
+.fa-facebook {
+  background: #3B5998,trasparent;
+  color: white;
+  
+  
+}
+
+
+.fa-linkedin {
+  background: #007bb5,transparent;
+  color: white;
+   
+
+  
+  
+}
+
+
+.fa-reddit {
+  background: #ff5700,transparent;
+  color: white;
+  margin-top: -10%;
+   
+  
+  
+}
+.section{
+    width: 100px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    color: transparent;
+    
+}
+   
+            
+        body{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body:before{
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+           background-image: url("my/www.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-filter: blur(1px);
+            -moz-filter: blur(1px);
+            -o-filter: blur(1px);
+            -ms-filter: blur(1px);
+            filter: blur(1px);
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: -1;
+          
+        }
+        
+        .contact-form
+        {
+            position: absolute;
+            
+            top: 55%;
+            left: 85%;
+            
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 500px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,.3);
+            direction: ltr;
+            
+            
+        }
+        .avatar {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            top: calc(-80px/2);
+            left: calc(50% - 40px);
+        }
+        .contact-form h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .contact-form p
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        .contact-form input
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .contact-form input[type="submit"] {
+            height: 30px;
+            color: #fff;
+            font-size: 15px;
+            background: red;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            margin-top: 15%;
+        }
+        .contact-form a
+        {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        input[type="checkbox"] {
+            width: 20%;
+        }
+        
+        .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #3e8e41;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+        
+         
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="opacity:0.8">
+  <!-- Brand -->
+  
+
+  <!-- Links -->
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="vb.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Contact</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Sources
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Mission</a>
+        <a class="dropdown-item" href="#">Resources</a>
+      
+     
+      </div>
+    </li>
+  
+  </ul>
+      <div class="fa-right">
+       <a href="https://facebook.com" class="fa fa-facebook"></a>
+
+       <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+
+       <a href="https://rediff.com" class="fa fa-reddit"></a>
+    </div>
+</nav> 
+    <div class="section"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15783.800790177755!2d76.95891236724655!3d8.504216793885936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ba3587755fa9%3A0x47b52564b817875!2sNeuf%20Solutions!5e0!3m2!1sen!2sin!4v1579325744064!5m2!1sen!2sin" border-radius="50%" width="200" height="550"  frameborder="0" style="border:0;"  allowfullscreen=""></iframe></div>
+      
+    
+
+
+
+  
+ 
+    <div class="contact-form">
+        <img src="my/2.jpg" class="avatar">
+        <h2>Contact Form</h2>
+        <form>
+            <p>Email</p>
+            <input type="text" name="" placeholder="Enter Email">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <input type="submit" name="" value="Sign In">
+            <p><input type="checkbox"> Remember Me</p>
+        </form>
+    </div>
+    <div>
+             
+
+    </div>
+   
+   
+
+</body>
+</html>
+    
